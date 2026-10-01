@@ -66,6 +66,17 @@ EXTRA_MIRROR_PATHS = {
     # Staff Engineer Mode exposes one router skill and loads routed specialist
     # files from a top-level specialists/ directory at runtime.
     "sirmarkz/staff-engineer-mode": ("specialists",),
+    # ZCode Bridge's .mcp.json starts dist/bridge.mjs, which launches the worker
+    # and setup hook from sibling directories; preserve the complete runtime.
+    "Sandyzzx/codex-zcode-bridge": (
+        "dist",
+        "hooks",
+        "licenses",
+        "mcp.json",
+        "NOTICE",
+        "plugin.json",
+        "worker",
+    ),
 }
 
 
